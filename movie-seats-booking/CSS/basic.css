@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    background-color: rgb(36,35,51);
+    font-family: 'Lato', sans-serif;
+}

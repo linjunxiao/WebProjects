@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+html,body{
+    // background-color: rgb(97,89,84);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+.header{
+    width: 100%;
+    height: 45px;
+    
+    // background-color: blue;
+    .logo{
+        float: left;
+        padding-left: 30px;
+        a{
+            display: inline-block;
+            width: 78px;
+            height: 21px;
+            background: url(../img/player_logo.png);
+        }
+    }
+    .register{
+        float: right;
+        li{
+            float: left;
+            line-height: 45px;
+            padding-right: 20px;
+        }
+    }
+}
+.content{
+    width: 100%;
+    height: 560px;
+    // background-color: #bfa;
+}
+.footer{
+    width: 100%;
+    height: 60px;
+    // background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    user-select: none;
+    .w{
+        display: flex;
+        align-items: center;
+        // background-color: #bfa;
+        a{
+             display: inline-block;
+             color: #fff;
+             background:url(../img/player.png) no-repeat 0 0;
+        }
+        .op{
+        
+            a{
+                
+                margin-right: 20px;
+            }
+            .pre{
+                width: 19px;
+                height: 20px;
+                background-position: 0 -30px;
+            }
+            .play{
+                width: 21px;
+                height: 29px;
+                background-position: 0 0;
+                vertical-align: -5px;
+            }
+            .play2{
+                background-position: -30px 0;
+            }
+            .next{
+                width: 19px;
+                height: 20px;
+                background-position: 0 -52px;
+            }
+        }
+        .progressInfo{
+            width: 670px;
+            height: 40px;
+            position: relative;
+            .topInfo{
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                .timeInfo{
+                    float: right;
+                }
+            }
+            .progress_bar{
+                margin-top: 5px;
+                height: 4px;
+                background-color: rgba(255,255,255,0.5);
+                position: relative;
+                .progress_line{
+                    width: 0px;
+                    height: 100%;
+                    background-color: #fff;
+                }
+                .progress_dot{
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    position: absolute;
+                    top: -5px;
+                    left: 0px;
+                }
+            }
+        }
+        .op2{
+            margin-left: 12px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            a{
+                margin-right: 15px;
+            }
+            div{
+                display: inline-block;
+                width: 26px;
+                height: 25px;
+                margin: 0 15px;
+                a{
+                    margin: 0 0;
+                }
+            }
+            .music_mode{
+                width: 26px;
+                height: 25px;
+                background-position: 0 -205px;
+            }
+            .music_mode2{
+                width: 23px;
+                height: 20px;
+                background-position: 0 -260px;
+            }
+            .music_mode3{
+                width: 25px;
+                height: 19px;
+                background-position: 0 -74px;
+            }
+            .music_mode4{
+                width: 26px;
+                height: 25px;
+                background-position: 0 -232px;
+                
+            }
+           
+            .music_fav{
+                width: 24px;
+                height: 21px;
+                background-position: 0 -96px;
+            }
+            .music_fav2{
+                background-position: -30px -96px;
+            }
+            .music_down{
+                width: 22px;
+                height: 21px;
+                background-position: 0 -120px;
+            } 
+            .music_comment{
+                width: 24px;
+                height: 24px;
+                background-position: 0 -400px;
+            } 
+            .music_only{
+                width: 74px;
+                height: 27px;
+                background-position: 0 -281px;
+                margin-right: 15px;
+            }
+            .music_only2{
+                background-position: 0 -310px;
+            }
+        }
+        .musicVoice{
+            width: 100px;
+            height: 40px;
+            // background-color: #000;
+            display: flex;
+            align-items: center;
+            .music_voice_icon{
+                width: 26px;
+                height: 21px;
+                margin-right: 4px;
+                background-position: 0 -144px;    
+            }
+            .music_voice_icon2{
+                background-position: 0 -182px;
+            }
+            .music_voice_bar{
+                width: 70px;
+                height: 4px;
+                background-color: rgba(255,255,255,0.5);
+                .music_voice_line{
+                    width: 35px;
+                    height: 100%;
+                    background-color: #fff;
+                }
+                .music_voice_dot{
+                    width: 14px;
+                    height: 14px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -5px;
+                    left: 16px;
+                }
+            }
+        }
+    }
+    
+    
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.w{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    .lfcontent{
+        width: 900px;
+        float: left;
+        .func{
+            li{
+                float: left;
+                width: 122px;
+                line-height: 40px;
+                border: 1px solid rgba(255,255,255,0.5);
+                text-align: center;
+                border-radius: 5px;
+                margin-right: 3px;
+                opacity: 0.5;
+                i{
+                    margin-right: 6px;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }   
+        }
+        .musicList{
+            height: 520px;  
+            // overflow: scroll;
+            li{
+                display: flex;
+                height: 61px;
+                align-items: center;
+                border-bottom: 1px solid rgba(255,255,255,0.5);
+                user-select: none;
+                
+                .list_check{
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #fff;
+                    opacity: 0.5;
+                }
+                .list_checked{
+                    background: url("../img/icon_sprite.png") no-repeat -60px -80px;
+                }
+                .id{
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    margin: 0 10px;
+                   
+                }
+                .id2{
+                    color: transparent !important;
+                    background: url("../img/wave.gif") no-repeat 0 center;
+                }
+                div{
+                    float: left;
+                }
+                .song-name{
+                    width: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .list_menu{
+                        display: flex;
+                        margin-right: 15px;
+                        display: none;
+                        div{
+                            width: 36px;
+                            height: 36px;
+                            margin-right: 4px;
+                            opacity: 0.5;
+                            background: url(../img/icon_list_menu.png) no-repeat 0 0; 
+                            &:nth-child(1){
+                                background-position: -120px 0;
+                            }
+                            &:nth-child(2){
+                                background-position: -120px -80px;
+                            }
+                            &:nth-child(3){
+                                background-position: -120px -120px;
+                            }
+                            &:nth-child(4){
+                                background-position: -120px -40px;
+                            }
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                        div.msc_play2{
+                            background-position: -80px -200px !important;
+                        }    
+                        
+                    }
+                }
+                .singer{
+                    width: 300px;
+                }
+                .length{
+                    width: 147px;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        display: none;
+                        width: 36px;
+                        height: 36px;
+                        background:url(../img/icon_list_menu.png) no-repeat -120px -160px;
+                        margin-left: 10px;
+                        opacity: 0.5;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rcontent{
+        width: 300px;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+        .songInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .song-pic{
+                background: url("../img/album_cover_player.png") no-repeat 0 0;
+                width: 201px;
+                height: 180px;
+                img{
+                    width: 180px;
+                    height: 180px;
+                }
+                margin-bottom: 10px;
+            }
+            a{
+                line-height: 30px;
+                color: #fff;
+                opacity: 0.5;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        .song_lyric_container{ 
+                margin-top: 30px;
+                height: 150px;
+                overflow: hidden;
+               
+            .song_lyric{
+                li{
+                    line-height: 30px;
+                    color: rgba(255,255, 255, 0.5); 
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .cur{
+                    color:#31c27c;
+                
+                }
+            }
+        }
+        
+    }
+}
+.mask_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url("../img/lnj.jpg") no-repeat 0 0;
+    background-size: cover;
+    filter: blur(100px);
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, 0.35);
+}

@@ -1,0 +1,100 @@
+.title {
+  font-size: 40px;
+  color: white;
+  margin: 50px auto;
+}
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
+}
+.wrapper .circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 250px;
+  background-color: black;
+  border-radius: 50%;
+  border-left: 20px solid #2c5e55;
+  border-right: 20px solid #51ad9b;
+  border-bottom: 20px solid white;
+  border-top: 20px solid transparent;
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s;
+  animation: big 3s infinite alternate-reverse linear;
+  z-index: 99;
+}
+@keyframes big {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    background-color: rgba(238, 255, 0, 0.356);
+  }
+}
+.wrapper .rotatecircle-wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.wrapper .rotatecircle-wrapper .rotatecircle {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+.wrapper .rotatecircle-wrapper .rotatecircle2 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+.wrapper .rotatecircle-wrapper .rotatecircle3 {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+.wrapper .rotatecircle-wrapper .rotatecircle4 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+/*# sourceMappingURL=./indexstyle.css.map */

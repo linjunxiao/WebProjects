@@ -1,0 +1,116 @@
+.f(){
+    float: left;
+}
+.main{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    text-align: center;
+    perspective: 800px;
+    .topbar{
+        line-height: 33px;
+        width: 300px;
+        margin: 30px auto;
+        
+        .price{
+            .f;
+            background-color: #fff;  
+            border-radius: 10px;
+        }
+        .title{
+            .f;
+            color: white;
+           margin-right: 8px;
+           
+        }
+    }
+    .select{
+        width: 346px;
+        height: 34px;
+        margin: 0 auto;
+        background-color: rgb(32,31,46);
+        ul{
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            align-items: center;
+            width: 346px;
+            height: 34px;
+            .fir{
+                background-color:rgb(68,68,81);
+            }
+            .sec{
+                background-color: rgb(111,234,246);
+            }
+            .third{
+                background-color: white;
+            }
+            
+            span{
+                color: rgb(119,105,81);
+            }
+        }
+        
+    }
+    .im{
+        .f;
+        width: 20px;
+        height: 20px;
+        border-radius: 15px 15px 0 0;
+        padding: 2px; 
+        box-sizing: border-box;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px 15px 0 0;
+            background-color: rgb(68,68,81);
+        }
+        // a:active{
+        //     background-color: rgb(111,234,246);
+        // }
+    }
+    .bg{
+        display: flex;
+        width: 240px;
+        height: 68px;
+        margin: 0 auto;
+        margin-top: 50px;
+        transform: rotateX(-45deg);
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    .seat{
+        display: flex;
+        width: 300px;   
+        height: 200px;
+        margin: 0 auto;
+        justify-content: space-around;
+        margin-top: 30px;
+        .im:hover{
+            a{
+                 background-color: rgb(111,234,246); 
+            }
+           
+            padding: 1px;
+        }
+        a:link{
+            background-color: rgb(111,234,246); 
+        }
+        .left,.right{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50px;
+            height: 160px;
+            justify-content: space-between;
+        }
+        .mid{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 160px;
+            width: 99px;
+        }
+    }
+    
+}

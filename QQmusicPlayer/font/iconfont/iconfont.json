@@ -1,0 +1,23 @@
+{
+  "id": "1935946",
+  "name": "图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18018826",
+      "name": "arrow-ios-downward",
+      "font_class": "arrow-ios-downward",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18016294",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    }
+  ]
+}

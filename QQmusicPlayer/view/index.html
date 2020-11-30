@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../font/css/all.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../JS/jquery.mCustomScrollbar.js"></script>
+    <script src="../JS/progress.js"></script>
+    <script src="../JS/player.js"></script>
+    <script src="../JS/lyric.js"></script>
+    <script src="../JS/index.js"></script>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo"><a href="javascript:;"></a></h1>
+        <ul class="register">
+            <li>登录</li>
+            <li>设置</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="w">
+            <div class="lfcontent">
+                <ul class="func clearfix">
+                    <li><i class="fa-heart fas"></i><a href="javascript:;">收藏</a></li>
+                    <li><i class="fa-plus fas"></i><a href="javascript:;">添加到</a></li>
+                    <li><i class="fa-download fas"></i><a href="javascript:;">下载</a></li>
+                    <li><i class="fa-trash-alt fas"></i><a href="javascript:;">删除</a></li>
+                    <li><i class="fa-brush fas"></i><a href="javascript:;">清空列表</a></li>
+                </ul>
+                <ul class="musicList" data-mcs-theme="dark">
+                    <li>
+                        <i class="list_check"></i>
+                        <div class="id"></div>
+                        <div class="song-name">歌曲</div>
+                        <div class="singer">歌手</div>
+                        <div class="length">时长</div>
+                    </li>
+                    <!-- <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">1</div>
+                        <div class="song-name">
+                            <span>告白气球</span>
+                            <div class="list_menu">
+                                <div title="播放"></div>
+                                <div title="添加"></div>
+                                <div title="下载"></div>
+                                <div title="分享"></div>
+                            </div>
+                        </div>
+                        <div class="singer">周杰伦</div>
+                        <div class="length">
+                            <span>03:35</span>
+                            <div title="删除"></div>
+                        </div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">2</div>
+                        <div class="song-name">
+                            <span>As long As Love Me</span>
+                            <div class="list_menu">
+                                <div title="播放"></div>
+                                <div title="添加"></div>
+                                <div title="下载"></div>
+                                <div title="分享"></div>
+                            </div>
+                        </div>
+                        <div class="singer">Justin Bieber</div>
+                        <div class="length">
+                            <span>03:49</span>
+                            <div title="删除"></div>
+                        </div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">3</div>
+                        <div class="song-name">
+                            <span>Something Just Like This</span>
+                            <div class="list_menu">
+                                <div title="播放"></div>
+                                <div title="添加"></div>
+                                <div title="下载"></div>
+                                <div title="分享"></div>
+                            </div>
+                        </div>
+                        <div class="singer">Chainsmokers</div>
+                        <div class="length">04:07</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">4</div>
+                        <div class="song-name">Your Song</div>
+                        <div class="singer">Lady Gaga</div>
+                        <div class="length">04:16</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li>
+                    <li class="msc">
+                        <i class="list_check"></i>
+                        <div class="id">5</div>
+                        <div class="song-name">凉凉</div>
+                        <div class="singer">杨宗纬/张碧晨</div>
+                        <div class="length">05:00</div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="rcontent">
+                <div class="songInfo">
+                    <div class="song-pic">
+                        <img src="../img/lnj.jpg" alt="">
+                    </div>
+                    <div class="song-name">
+                        歌曲名称:
+                        <a href="javascript:;">123</a>
+                    </div>
+                    <div class="singer-name">
+                        歌手名:
+                        <a href="javascript:;">123</a>
+                    </div>
+                    <div class="album-name">
+                        专辑名:
+                        <a href="javascript:;">123</a>
+                    </div>
+                </div>
+                <div class="song_lyric_container clearfix">
+                    <ul class="song_lyric">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="w">
+            <div class="op">
+                <a href="javascript:;" class="pre"></a>
+                <a href="javascript:;" class="play"></a>
+                <a href="javascript:;" class="next"></a>
+            </div>
+            <div class="progressInfo">
+                <div class="topInfo">
+                    <span class="songInfo">告白气球/周杰伦</span>
+                    <span class="timeInfo">00:00/03:35</span>
+                </div>
+                <div class="progress_bar">
+                    <div class="progress_line">
+                        <div class="progress_dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="op2">
+                <div>
+                    <a href="javascript:;" class="music_mode music_mode1"></a>
+                </div>
+
+                <a href="javascript:;" class="music_fav music_fav2"></a>
+                <a href="javascript:;" class="music_down"></a>
+                <a href="javascript:;" class="music_comment"></a>
+                <a href="javascript:;" class="music_only music_only2"></a>
+
+            </div>
+            <div class="musicVoice">
+                <a href="javascript:;" class="music_voice_icon"></a>
+                <div class="music_voice_bar">
+                    <div class="music_voice_line">
+                        <div class="music_voice_dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mask_bg"></div>
+    <div class="mask"></div>
+    <audio src=""></audio>
+</body>
+
+</html>
